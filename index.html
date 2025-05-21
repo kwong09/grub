@@ -4,7 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
   </head>
+
+  <nav id="navbar" class="flex items-center justify-between bg-[#acc6d7] fixed w-screen h-20">
+    <div>
+        <ul class="flex justify-end">
+            <div class="m-3 bg-white rounded-xl"><li class="p-2 px-4 hover:bg-[#edf6fc] hover:rounded-xl hover:cursor-pointer text-2xl"><a href="index.html">Home</a></li></div>
+            <div class="m-3 bg-white rounded-xl"><li class="p-2 px-4 hover:bg-[#edf6fc] hover:rounded-xl hover:cursor-pointer text-2xl"><a href="menu.html">Menu</a></li></div>
+        </ul>
+    </div>
+  </nav>
+
+
   <body class="bg-white">
     <nav class="bg-[#acc6d7] h-15">
         <div class="grid-cols-4">
@@ -12,7 +27,7 @@
     </nav>
 
     <div class="flex container mx-auto text-center justify-center items-center">
-      <img src="https://kwong09.github.io/otter-eats/images/ottereats_logo.png" class="h-90 w-90">
+      <img src="https://kwong09.github.io/otter-eats/images/ottereats_logo.png" class="hover:scale-125 transition duration-200 h-90 w-90">
     </div>
 
     <div class="container mx-auto p-8 grid lg:grid-cols-3 grid-cols-1 gap-3">
@@ -21,25 +36,47 @@
               <img class="rounded-xl object-cover h-60 w-60" src="https://kwong09.github.io/otter-eats/images/ottermenu_icon.png">
           </div>
         </a>
-        <a href="menu.html">
+        <a href="#about">
           <div class="flex justify-center items-center transition duration-200 hover:scale-110 hover:rotate-5 container mx-auto bg-[#ef798a] h-60 w-60 p-4 m-4 rounded-xl">
               <img class="rounded-xl object-cover h-60 w-60" src="https://kwong09.github.io/otter-eats/images/otterabout_icon.png">
           </div>
         </a>
-        <a href="menu.html">
+        <a href="#faq">
           <div class="flex justify-center items-center transition duration-200 hover:scale-110 hover:-rotate-5 container mx-auto bg-[#ffbc42] h-60 w-60 p-4 m-4 rounded-xl">
               <img class="rounded-xl object-cover h-60 w-60" src="https://kwong09.github.io/otter-eats/images/otterfaq_icon.png">
           </div>
         </a>
     </div>
 
-    <div class="container mx-auto text-center">
-      <h1 class="pt-6 text-5xl font-bold my-10">About</h1>
+    <div id="about" class="bg-[#edf6fc] rounded-xl container mx-auto text-center items-center mb-20">
+      <h1 class="pt-10 text-5xl font-bold my-10">About</h1>
 
-      <div class="container mx-auto p-8 grid lg:grid-cols-2 grid-cols-1 gap-3">
-        <img class="overflow-hidden w-90 h-90" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm_szPAEWXoreCbz4ydj-0d-vaHH35vcnBpQ&s">
-        <p class="text-2xl">Otter Eats is a unique dining experience thoughtfully created by <span class="font-bold hover:cursor-pointer hover:text-[#ef798a]">Kayla</span>. Our menu features a selection of dishes inspired by Ara's personal preferences, ensuring a delightful culinary experience. Guests can enjoy their meals in a welcoming atmosphere that includes the charming presence of our resident otters. Our aim is to provide a memorable and enjoyable setting where good food and whimsical fun come together. At Otter Eats, we are dedicated to offering a memorable and heartwarming dining occasion.</p>
+      <div class="container mx-auto p-8 grid lg:grid-cols-2 grid-cols-1 gap-3 flex justify-center items-center">
+        <div class="flex justify-center items-center"><img class="overflow-hidden w-90 h-90 rounded-xl hover:shadow-md hover:scale-105 transition duration-300" src="/images/aboutimage.png"></div>
+        <div class="p-5 rounded-xl bg-white hover:shadow-md hover:scale-105 transition duration-300"><p class="text-2xl">Otter Eats, thoughtfully created by <a href="#faq"><span class="font-bold hover:cursor-pointer hover:text-[#ef798a]">Kayla</span></a>, 
+          offers a unique dining experience. Our menu features dishes inspired by <a href="#faq"><span class="font-bold hover:cursor-pointer hover:text-[#ef798a]">Ara's</span></a> favorites, and guests 
+          enjoy a welcoming, otter-filled atmosphere where good food and whimsical fun come together. <br><br> Enjoy the food! :)</p></div>
       </div>
+    </div>
+
+    <div id="faq" class="container mx-auto text-center">
+      <h1 class="pt-6 text-5xl font-bold my-10">Frequently Asked Questions (FAQ)</h1>
+      <div class="container grid grid-cols-1 gap-3">
+        <div class="container mb-10 mx-auto bg-[#edf6fc] p-3 px-15 max-w-170 rounded-xl hover:shadow-md hover:scale-105 transition duration-300"><span class="text-2xl font-bold">Who is Kayla?</span><br><br>
+        Kayla is the person who made this website! She is quite literally the definition of amazing and spectacular and perfect and so so so humble.</div>
+      </div>
+
+        <div class="container mb-10 mx-auto bg-[#edf6fc] p-3 px-15 max-w-170 rounded-xl hover:shadow-md hover:scale-105 transition duration-300"><span class="text-2xl font-bold">Who is Ara?</span><br><br>
+        Ara is the inspiration of this entire website. One day, Kayla felt like making a website for <a href="https://grub.hackclub.com"><span class="font-bold hover:cursor-pointer hover:text-[#ef798a]">Grub</span></a> and asked Ara what she was craving. Ara then proceeded to list out everything she likes to eat. She also added that... she likes otters</div>
+      </div>
+
+        <div class="container mb-10 mx-auto bg-[#edf6fc] p-3 px-15 max-w-170 rounded-xl hover:shadow-md hover:scale-105 transition duration-300 text-center"><span class="text-2xl font-bold">Can I actually order food here?</span><br><br>
+        Um... no. But you can look at the beautiful website and admire the food!</div>
+      </div>
+    </div>
+
+    <div class="bg-[#edf6fc] p-6 text-center">
+      © 2025 Otter Eats. All rights reserved.
     </div>
 
   </body>
